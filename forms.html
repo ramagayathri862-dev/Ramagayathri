@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html>
+    <body>
+        <form action="restaurant.html">
+            Enter your name<br>
+            <input type="text" name="username"><br>
+            First Name: <input type="text" name="firstname"/><br>
+            Last Name: <input type="text" name="lastname"/><br>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname"/><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname"/><br>
+            Enter your address:<br>
+           <textarea rows="6" cols="20"></textarea><br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"/><br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="gender" value="male"/>Male
+            <input type="radio" id="gender" name="gender" value="female"/>FeMale<br>
+            Hobby:<br>
+            <input type="checkbox" id="cricket" name="cricket" value="cricket"/>
+            <label for="cricket">Cricket</label><br>
+            <input type="checkbox" id="football" name="football" value="football"/>
+            <label for="football">Football</label><br>
+            <input type="checkbox" id="hockey" name="hockey" value="hockey"/>
+            <label for="hockey">Hockey</label><br>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>AIDS</option>
+            </select>
+            <label for="name">Enter your name</label><br>
+             <input type="text" id="name" name="name"><br>
+             <label for="pass">Enter Password</label><br>
+             <input type="password" id="pass" name="pass"><br>
+             <input type="submit" value="submit"><br>
+                <fieldset>
+                    <legend>User Information:</legend>
+                    <label for="name">Enter name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="pass">Enter Password</label><br>
+                    <input type="password" id="pass" name="pass"><br>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </fieldset>
+                <input type="button" value="Click me" onclick="alert('you are learning HTML')"><br>
+                <label>Select file to upload:</label>
+                <input type="file" name="newfile"><br>
+                <input type="submit" value="submit">
+                <input type="text" name="name"><br>
+                <input type="image"alt="submit" src="klh.jpg" width="200px"><br><br>
+                <input type="color" name="upclick" value="#a52a2a">Up-click<br>
+                <input type="color" name="downclick" value="#f5f5dc">Down-click<br><br>
+                <input type="date" name="startdate">start date:<br><br>
+                <input type="date" name="enddate">end date:<br><br>
+                <input type="month" name="month">month:<br><br>
+                <input type="week" name="week">week:<br><br>
+                <input type="datetime-local" name="meetingdate"><br><br>
+                <label>Enter your age:</label>
+                <input type="number" name="num" min="50" max="80"><br><br>
+                <input type="submit"><br><br>
+                <label><b>Enter your Telephone Number(in format of xxx-xxx-xxxx):</b></label>
+                <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+                <input type="submit"><br><br>
+                example1: 10-digit mobile number
+                <input type="text" pattern="[0-9]{10}" placeholder="10-digit mobile number"><br>
+                accepts:9876543210<br>
+                rejects:98765,98abs44567<br>
+                example1:college roll number format(example:CSE1)
+                 <input type="text" pattern="[A-Z]{3}[0-9]{3}" placeholder="CSE123"><br>
+                example3:only alphabets allowed
+                <input type="text" pattern="[A-Za-z]+" placeholder="only letters"><br>
+                accepts:srivalli,html<br>
+                rejects:123,abc123<br>
+                <label>search here:</label>
+                <input type="search" name="q">
+                <input type="submit" value="search"><br>
+                <label>Enter your email address</label><br>
+                <input type="text" name="uname" autofocus><br><br>
+                <label>Enter your password</label><br>
+                <input type="password" name="pass"><br><br>
+                <input type="submit" value="login"><br><br>
+                <label>Password</label>
+                <input type="password" minlength="6" maxlength="12"required><br><br>
+                <input type="submit"><br>
+                <label>account holder name:</label>
+                <input type="text" name="uname" size="40"required><br><br>
+                <in <label>search here:</label>
+                <input type="search" name="q">
+                <input type="submit" value="search"><br>
+                <label>Enter your email address</label><br>
+                <input type="text" name="uname" autofocus><br><br>
+                <label>Enter your password</label><br>
+                <input type="password" name="pass"><br><br>
+                <input type="submit" value="login"><br><br>
+                <label>Password</label>
+                <input type="password" minlength="6" maxlength="12"required><br><br>
+                <input type="submit"><br>
+                <label>account holder name:</label>
+                <input type="text" name="uname" size="40"required><br><br>
+                <input type="text" value="India" readonly>
+                <input type="text" value="India" disabled>
+             </form>
+    </body>
+</html>

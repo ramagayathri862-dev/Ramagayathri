@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                width: 100%;
+            }
+            body{
+                background-color: grey;
+                text-align: center;
+                background-image: url("images.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 10px;
+            }
+           .container{
+            margin: 10px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+           }
+           .container h1{
+            font-size: 40px;
+            color: #222121;
+           }
+           .container p{
+            font-size: 20px;
+            color: #222121;
+           }
+           nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+           }
+           nav ul{
+            display: flex;
+            margin: 0px;
+            padding:0px;
+            list-style: none;
+            justify-content: center;
+           }
+           nav li{
+            margin: 0%;
+            padding: 10px 20px;
+            justify-content: center;
+            font-weight: bold;
+           }
+           nav a{
+            color: whitesmoke;
+            justify-content: center;
+            text-decoration: none;
+           }
+           nav a:hover{
+            color: #444;
+            text-decoration: none;
+            background-color: grey;
+            padding: 10px;
+           }
+           .form {
+            display: block;
+            margin:auto;
+            color: black;
+            background-color: #f4f4f4;
+            border:black 2px solid;
+            font-size: 20px;    
+           }
+           footer {
+            background-color: #222121;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-left: 0px;
+            margin-bottom: 10px;
+            }
+            footer p{
+                margin: 0px;
+                text-align: center;
+                padding: 10px;
+                padding-left: 0px;
+                color: white;
+                background-color: #222121;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="header">
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</div>
+<div class="container">
+    <h1>Contact Me</h1>
+<div class="form">
+    <form class="form">
+        <fieldset>
+            <legend>Get in Touch</legend>
+            <label>Name</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter your email"><br>
+            <label>Message</label><br>
+            <textarea rows="5" placeholder="Enter your message"></textarea><br>
+            <input type="submit" value="Send Message"><br>
+        </fieldset>
+    </form>
+</div>
+    <p>Email: myemail@example.com</p>
+    <p>Phone: 9346771586</p>
+</div>
+    <footer>
+    <p>&copy 2026 My Portfolio</p>
+</footer>
+    </body>
+</html>

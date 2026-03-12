@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Storage Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2> student portal</h2>
+    <input type="text" id="name"placeholder="enter your name"><br>
+    <button onclick="saveLocal()">save(sessionStorage)</button>
+    <button onclick="clearData()">clear</button>
+    <div id="output"></div>
+    <script>
+        window.onload=function(){
+            let localName=localStorage.getItem("studentName");
+            let sessionName=sessionStorage.getItem("studentName");
+            if(localName){
+                document.getElementById("output").textContent="welcome back (localStorage):"+localName;
+            }
+            if(sessionName){
+             document.getElementById("output").textContent="welcome back (sessionStorage):"+sessionName;
+
+            }
+
+        };
+        function saveLocal(){
+                let name=document.getElementById("name").value;
+                localStorage.setItem("studentName",name);
+                document.getElementById("output").textContent="Saved in localStorage!";
+            }
+            function sessionStorage(){
+                let name=document.getElementById("name").value;
+                sessionStorage.setItem("studentName",name);
+                document.getElementById("output").textContent="Saved in sessionStorage!";
+            }
+            function clearData(){
+                localStorage.removeItem("studentName");
+                sessionStorage.removeItem("studentName");
+                document.getElementById("output").textContent="Storage cleared";
+            }
+
+    </script>
+
+</body>
+</html>
